@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshGroceries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        header {
+            background-color: #27ae60;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2ecc71;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .category {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .category img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #27ae60;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FreshGroceries</h1>
+        <p>Your daily essentials delivered fresh!</p>
+    </header>
+    <nav>
+        <a href="#fruits">Fruits</a>
+        <a href="#vegetables">Vegetables</a>
+        <a href="#dairy">Dairy</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="container" id="fruits">
+        <h2>Fresh Fruits</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="https://via.placeholder.com/150" alt="Apples">
+                <h3>Apples</h3>
+                <p>Fresh and juicy apples.</p>
+                <p><strong>$2.99/lb</strong></p>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/150" alt="Bananas">
+                <h3>Bananas</h3>
+                <p>Sweet and ripe bananas.</p>
+                <p><strong>$0.99/lb</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="vegetables">
+        <h2>Fresh Vegetables</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="https://via.placeholder.com/150" alt="Tomatoes">
+                <h3>Tomatoes</h3>
+                <p>Organic and red tomatoes.</p>
+                <p><strong>$1.49/lb</strong></p>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/150" alt="Carrots">
+                <h3>Carrots</h3>
+                <p>Crisp and fresh carrots.</p>
+                <p><strong>$0.99/lb</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="dairy">
+        <h2>Dairy Products</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="https://via.placeholder.com/150" alt="Milk">
+                <h3>Milk</h3>
+                <p>Fresh and creamy milk.</p>
+                <p><strong>$3.49/gallon</strong></p>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/150" alt="Cheese">
+                <h3>Cheese</h3>
+                <p>Rich and delicious cheese.</p>
+                <p><strong>$4.99/pack</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@freshgroceries.com</p>
+        <p>Phone: +1 800 555 6789</p>
+        <p>Address: 123 Fresh Market Street, Grocery Town</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 FreshGroceries. All rights reserved.</p>
+    </footer>
+</body>
+</html>

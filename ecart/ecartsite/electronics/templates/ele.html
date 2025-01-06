@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Electronics World</h1>
+        <p>Your one-stop shop for all electronics needs!</p>
+    </header>
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="container" id="products">
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <p>Latest models available!</p>
+                <p><strong>$499</strong></p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>High performance for work and play.</p>
+                <p><strong>$999</strong></p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>Experience immersive sound.</p>
+                <p><strong>$199</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="services">
+        <h2>Our Services</h2>
+        <p>We offer repair and maintenance services for all kinds of electronics.</p>
+        <p>Need assistance? Contact us today!</p>
+    </div>
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@electronicsworld.com</p>
+        <p>Phone: +1 800 123 4567</p>
+        <p>Address: 123 Tech Street, Silicon Valley, CA</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 Electronics World. All rights reserved.</p>
+    </footer>
+</body>
+</html>

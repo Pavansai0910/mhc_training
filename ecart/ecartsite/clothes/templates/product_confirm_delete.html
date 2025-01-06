@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 50px;
+        }
+        .product-details {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 60%;
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        .product-details p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #ff4d4d;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #e60000;
+        }
+        .cancel-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #555;
+        }
+        .cancel-link:hover {
+            color: #ff4d4d;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-details">
+        <h1>Delete Product</h1>
+        <p><strong>Product ID:</strong> {{ product.product_id }}</p>
+        <p><strong>Name:</strong> {{ product.name }}</p>
+        <p><strong>Customer ID:</strong> {{ product.customer_id }}</p>
+        <p><strong>Price:</strong> ${{ product.price }}</p>
+        
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit" class="button">Confirm Delete</button>
+        </form>
+        
+        <a href="{% url 'product-list' %}" class="cancel-link">Cancel</a>
+    </div>
+</body>
+</html>
